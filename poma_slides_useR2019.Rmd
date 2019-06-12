@@ -1,0 +1,41 @@
+---
+title: "POMA"
+subtitle: "Statistical analysis tool for targeted metabolomic data"
+author: "Pol Castellano-Escuder"
+date: "Jul, 2019"
+output:
+  xaringan::moon_reader:
+    css: ["mycss.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true 
+      countIncrementalSlides: false
+---
+
+layout: true
+
+<div class="my-footer"></div>  
+
+---
+
+class: inverse, center, middle
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
+
+# HELLO
+
+---
+
+# HELLO
+
+---
+
+class: inverse, center, middle
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
+
+# BYE
+
+---
+
+# BYE
+
