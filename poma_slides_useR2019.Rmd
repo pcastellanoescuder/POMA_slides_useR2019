@@ -11,6 +11,7 @@ output:
       highlightStyle: github
       highlightLines: true 
       countIncrementalSlides: false
+    yolo: false  
 ---
 
 layout: true
@@ -18,6 +19,8 @@ layout: true
 <div class="my-footer"></div>  
 
 ---
+
+layout: false
 
 class: inverse, center, middle
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
