@@ -2,7 +2,7 @@
 title: "POMA"
 subtitle: "Statistical analysis tool for targeted metabolomic data"
 author: "Pol Castellano-Escuder"
-date: "Jul, 2019"
+date: "Jul 11, 2019 | useR! 2019 | Toulouse"
 output:
   xaringan::moon_reader:
     css: ["mycss.css"]
@@ -11,34 +11,53 @@ output:
       highlightStyle: github
       highlightLines: true 
       countIncrementalSlides: false
-    yolo: false  
+    includes:
+      in_header: header.html
 ---
-
-layout: true
-
-<div class="my-footer"></div>  
-
----
-
-layout: false
 
 class: inverse, center, middle
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
 # HELLO
 
 ---
 
-# HELLO
+# What’s Metabolomics?
+
+_"Metabolomics is the identification and quantification of the small molecule metabolic products (the metabolome) of a biological system. Mass spectrometry and NMR spectroscopy are the techniques most often used for metabolome profiling"<sup>1</sup>_
+
+<img src="pix/omics.jpg" width="800">
+
+.footnote[
+[1] https://www.nature.com/subjects/metabolomics
+]
 
 ---
 
 class: inverse, center, middle
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
 # BYE
 
 ---
 
-# BYE
+---
+
+class: inverse, center, middle
+
+# Thank you all!
+
+To the [Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional & Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?) for amazing support
+
+To the [useR! 2019](http://www.user2019.fr/) organizers, for allowing me to show this work
+
+Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
+
+<html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
+
+<a href="mailto:polcaes@gmail.com"><i class="fas fa-envelope"></i>&nbsp; polcaes@gmail.com</a><br>
+<a href="https://pcastellanoescuder.github.io/"><i class="fas fa-link"></i>&nbsp; pcastellanoescuder.github.io/</a><br>
+<a href="http://twitter.com/polcastellano_"><i class="fab fa-twitter"></i>&nbsp; @polcastellano_</a><br>
+<a href="https://github.com/pcastellanoescuder"><i class="fab fa-github"></i>&nbsp; @pcastellanoescuder</a><br>
+<a href="https://www.ub.edu/web/ub/en/index.html?"><i class="fas fa-map-marker-alt"></i>&nbsp; University of Barcelona</a>
 

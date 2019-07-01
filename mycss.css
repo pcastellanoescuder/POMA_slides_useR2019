@@ -4,7 +4,7 @@
 @import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
 
 body {
-  font-family: 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-family: 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Microsoft YaHei', 'Songti SC', serif;
 }
 
 .remark-code, .remark-inline-code {
@@ -16,7 +16,7 @@ body {
 
 .remark-slide-content {
   background-color: #FFFFFF;
-  border-top: 80px solid #23373B;
+  border-top: 80px solid #336b87; /*#23373B*/
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
@@ -28,7 +28,7 @@ body {
 }
 
 .inverse {
-  background-color: #23373B;
+  background-color: #336b87; /*#23373B*/
   text-shadow: none;
 }
 
@@ -115,12 +115,15 @@ position: absolute;
   font-family: 'Fira Sans';
   color: #272822;
   opacity: 1;
+  margin-bottom: 2px;
 }
+
 .inverse .remark-slide-number {
   font-size: 13pt;
   font-family: 'Fira Sans';
   color: #FAFAFA;
   opacity: 1;
+  margin-bottom: 2px;
 }
 
 /* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
@@ -305,8 +308,21 @@ th, td { padding: 5px; }
   }
 }
 
+a, a > code {
+  color: #f38620; /*default: rgb(249, 38, 114); || sets color of links */
+  text-decoration: none; /* turns off background coloring of links */
+}
+
+.footnote {
+  position: absolute;
+  bottom: 2em;
+  padding-right: 4em;
+  font-size: 80%;
+}
+
 /*FOOTER*/
 
+/*
 div.my-footer {
 content: "";
     position: absolute;
@@ -317,5 +333,22 @@ content: "";
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("pix/footer.png");
+}
+*/
+
+div.my-footer {
+    background-color: #272822;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 15px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 8pt;
+    color: #F7F8FA;
+    position: absolute;
+    left: 15px;
+    bottom: 1.5px;
 }
 
