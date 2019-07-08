@@ -26,10 +26,23 @@ class: center, middle, inverse, title-slide
 
 # Outline
 
-## 1. Context
-## 2. Motivation &amp; Aims
-## 3. Results
-## 4. Conclusions
+.pull-left[
+
+### 1. Context
+### 2. Motivation &amp; Aims
+### 3. Results
+### 4. Conclusions
+### 5. Future Work
+
+]
+
+.pull-right[
+
+.center[
+&lt;img src="pix/POMA_sticker.png" width="250"&gt;
+]
+
+]
 
 ---
 
@@ -43,8 +56,6 @@ class: inverse, center, middle
 # What’s Metabolomics?
 
 _"Metabolomics is the identification and quantification of the small molecule metabolic products (the metabolome) of a biological system. Mass spectrometry and NMR spectroscopy are the techniques most often used for metabolome profiling"&lt;sup&gt;1&lt;/sup&gt;_
-
---
 
 ## _"The Omics Cascade"_
 
@@ -62,11 +73,15 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 # The data
 
-Standard (Omics) matrix: Samples in rows and Metabolites (variables) in columns
+## How is the data?
 
-Targeted metabolomics: focuses on several metabolites you are interested in, which means you already know them. 
+  - Standard (Omics) matrix: Samples in rows and metabolites (variables) in columns
 
-Untargeted metabolomics: all metabolites will be acquired, which means you know some metabolites are different in two or more sample groups, but do not know what exactly they are. It is used to generate your hypothesis.
+## Targeted and untargeted metabolomics
+
+  - **Targeted metabolomics:** we know the mass of the metabolites that we want to quantify BEFORE the analysis (hundreds)
+
+  - **Untargeted metabolomics:** all metabolites will be acquired, but we will not know exactly which ones are some of them (thousands)
 
 ---
 
@@ -85,7 +100,7 @@ Untargeted metabolomics: all metabolites will be acquired, which means you know 
   - Workflow4metabolomics 
   - Galaxy-M
   - XCMS Online 
-  - MetaboAnalyst 3.0
+  - MetaboAnalyst
 ]
 
 .footnote[
@@ -93,6 +108,7 @@ Untargeted metabolomics: all metabolites will be acquired, which means you know 
 [3] Spicer, R., Salek, R. M., Moreno, P., Cañueto, D., &amp; Steinbeck, C. (2017). Navigating freely-available software tools for metabolomics analysis. Metabolomics, 13(9), 106.
 
 ]
+
 ---
 
 class: inverse, center, middle
@@ -112,33 +128,143 @@ class: inverse, center, middle
 
 ## Aims
 
-  - Provide users of an **EASY USE** tool that don’t require programming skills
+  - Provide users of an &lt;span style="color:#f38620"&gt;**EASY USE**&lt;/span&gt; tool that don’t require programming skills
   
   - Allow users to analyze all types of data (simple and complex)
   
   - Lead the user for a good statistical analysis (Documentation &amp; automatic reports) 
   
-  - Make a completely **REPLICABLE** analysis
+  - Make a completely &lt;span style="color:#f38620"&gt;**REPLICABLE**&lt;/span&gt; analysis (Open Source)
+  
+  - **Our main aim is &lt;span style="color:#f38620"&gt;COMPLETE&lt;/span&gt; and give other option to users, &lt;span style="color:#f38620"&gt;NOT&lt;/span&gt; to &lt;span style="color:#f38620"&gt;COMPETE&lt;/span&gt; with the extisting tools**
+
 
 ???
 
 Because we want
 Because programming is cool
-Open source
+Black box
 
 ---
 
-# Architecture
+class: inverse, center, middle
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
+
+# RESULTS
+
+---
+
+# POMA Shiny App
+
+![](pix/landscape.png)
+
+_http://polcastellano.shinyapps.io/POMA/_
+
+---
+
+# Input Data Panel
+
+We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
+
+![](pix/example_data.png)
+---
+
+# Input Data Panel
+
+We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
+
+![](pix/example_data2.png)
+---
+
+# Visualization
+
+All plots in the app are designed using `plotly` package. It make all plots interactive allowing users to zoom in or zoom out in a plots, select points to see the individual information, hide all points of one group and download plots in a easy way!
+
+.pull-left[
+
+![](pix/zoom_in.png)
+]
+
+.pull-right[
+
+![](pix/splsda.png)
+
+]
+
+---
+
+# Documentation
+
+The implementation of `shinyhelper` package allows each panel to have an individual help  
+
+![](pix/normalization.png)
+
+---
+
+# Documentation
+
+The implementation of `shinyhelper` package allows each panel to have an individual help  
+
+![](pix/help.png)
+
+---
+
+# Statistical Analysis
+
+The aim is to offer to tune as many parameters as possible to avoid the "black box" effect
+
+![](pix/ttest.png)
+
+---
+
+# Automatic Statistical Report
 
 .center[
-&lt;img src="pix/architecture.png" width="750"&gt;
+&lt;img src="pix/automatic.png" width="650"&gt;
 ]
+
+---
+
+class: inverse, center, middle
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
+
+# CONCLUSIONS
+
+---
+
+# Conclusions
+
+&lt;b&gt;
+
+  - We have developed a &lt;span style="color:#f38620"&gt;FAST&lt;/span&gt;, &lt;span style="color:#f38620"&gt;FRIENDLY&lt;/span&gt; and &lt;span style="color:#f38620"&gt;FREE&lt;/span&gt; software that is called POMA
+  
+  - POMA is &lt;span style="color:#f38620"&gt;full-based in R&lt;/span&gt; language and uses a &lt;span style="color:#f38620"&gt;Shiny&lt;/span&gt; system to run
+  
+  - POMA provides an accurate &lt;span style="color:#f38620"&gt;DOCUMENTATION&lt;/span&gt; ("HELP") at each step of analysis that coluld improve the results and facilitate the interpretation of it
+  
+  - POMA can generate two types of &lt;span style="color:#f38620"&gt;AUTOMATIC REPORTS&lt;/span&gt;: Exploratory report and Statistical report
+  
+  - POMA is in a constant development. According to this, we are &lt;span style="color:#f38620"&gt;totally open to user&lt;/span&gt; bug reports to keep improving our app
+
+&lt;/b&gt;
 
 ---
 
 # Future Work
 
-package
+(In order of importance...)
+
+  - Finishing the documentation as accurately as possible
+    
+  - Make the code more efficient
+
+  - Develop a package with all POMA functions
+
+.center[
+
+&lt;img src="pix/meme.jpg" width="300"&gt;
+
+]
 
 ---
 
