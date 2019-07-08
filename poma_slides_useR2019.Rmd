@@ -15,10 +15,19 @@ output:
       in_header: header.html
 ---
 
+# Outline
+
+## 1. Context
+## 2. Motivation & Aims
+## 3. Results
+## 4. Conclusions
+
+---
+
 class: inverse, center, middle
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
-# HELLO
+# CONTEXT
 
 ---
 
@@ -42,12 +51,100 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 ---
 
+# The data
+
+Standard (Omics) matrix: Samples in rows and Metabolites (variables) in columns
+
+Targeted metabolomics: focuses on several metabolites you are interested in, which means you already know them. 
+
+Untargeted metabolomics: all metabolites will be acquired, which means you know some metabolites are different in two or more sample groups, but do not know what exactly they are. It is used to generate your hypothesis.
+
+---
+
+# Freely Available Existing Tools
+
+.pull-left[
+
+```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, dpi = 200}
+library(ggplot2)
+tools <- readxl::read_excel("tools.xlsx")
+#png("pix/tools.png", res = 200, units = "cm", width = 20, height = 20)
+ggplot(tools, aes(`Tool class`, ..count..)) +
+  geom_bar(aes(fill = `Software type`), position = "dodge") +
+  xlab("") +
+  ylab("Counts") +
+  theme_minimal() +
+  theme(
+    legend.title=element_text(size=14),
+    legend.text=element_text(size=13),
+    axis.text=element_text(size=14),
+    axis.title=element_text(size=14))
+#dev.off()
+```
+
+]
+
+.pull-right[
+
+### Web Apps that allows users to perform a statistical analysis<sup>3</sup>
+
+  - Workflow4metabolomics 
+  - Galaxy-M
+  - XCMS Online 
+  - MetaboAnalyst 3.0
+]
+
+.footnote[
+
+[3] Spicer, R., Salek, R. M., Moreno, P., Cañueto, D., & Steinbeck, C. (2017). Navigating freely-available software tools for metabolomics analysis. Metabolomics, 13(9), 106.
+
+]
+---
+
 class: inverse, center, middle
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
-# BYE
+# MOTIVATION & AIMS
 
 ---
+
+# Motivation & Aims
+
+## Motivation
+
+  - Biological interpretation of the results is one of the hard points and high knowledge of statistical analysis and computational programming is usually required
+  
+  - Sometimes, the existing tools don’t accept "complicated" databases
+
+## Aims
+
+  - Provide users of an **EASY USE** tool that don’t require programming skills
+  
+  - Allow users to analyze all types of data (simple and complex)
+  
+  - Lead the user for a good statistical analysis (Documentation & automatic reports) 
+  
+  - Make a completely **REPLICABLE** analysis
+
+???
+
+Because we want
+Because programming is cool
+Open source
+
+---
+
+# Architecture
+
+.center[
+<img src="pix/architecture.png" width="750">
+]
+
+---
+
+# Future Work
+
+package
 
 ---
 
@@ -68,4 +165,11 @@ Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 <a href="http://twitter.com/polcastellano_"><i class="fab fa-twitter"></i>&nbsp; @polcastellano_</a><br>
 <a href="https://github.com/pcastellanoescuder"><i class="fab fa-github"></i>&nbsp; @pcastellanoescuder</a><br>
 <a href="https://www.ub.edu/web/ub/en/index.html?"><i class="fas fa-map-marker-alt"></i>&nbsp; University of Barcelona</a>
+
+```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, eval = FALSE}
+# HTML to PDF
+library(webshot)
+file_name <- paste0("file://", normalizePath("poma_slides_useR2019.html"))
+webshot(file_name, "poma_slides_useR2019.pdf")
+```
 

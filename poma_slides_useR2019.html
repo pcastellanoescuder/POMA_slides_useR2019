@@ -24,10 +24,19 @@ class: center, middle, inverse, title-slide
 ---
 
 
+# Outline
+
+## 1. Context
+## 2. Motivation &amp; Aims
+## 3. Results
+## 4. Conclusions
+
+---
+
 class: inverse, center, middle
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
 
-# HELLO
+# CONTEXT
 
 ---
 
@@ -51,12 +60,85 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 ---
 
+# The data
+
+Standard (Omics) matrix: Samples in rows and Metabolites (variables) in columns
+
+Targeted metabolomics: focuses on several metabolites you are interested in, which means you already know them. 
+
+Untargeted metabolomics: all metabolites will be acquired, which means you know some metabolites are different in two or more sample groups, but do not know what exactly they are. It is used to generate your hypothesis.
+
+---
+
+# Freely Available Existing Tools
+
+.pull-left[
+
+![](poma_slides_useR2019_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+]
+
+.pull-right[
+
+### Web Apps that allows users to perform a statistical analysis&lt;sup&gt;3&lt;/sup&gt;
+
+  - Workflow4metabolomics 
+  - Galaxy-M
+  - XCMS Online 
+  - MetaboAnalyst 3.0
+]
+
+.footnote[
+
+[3] Spicer, R., Salek, R. M., Moreno, P., Cañueto, D., &amp; Steinbeck, C. (2017). Navigating freely-available software tools for metabolomics analysis. Metabolomics, 13(9), 106.
+
+]
+---
+
 class: inverse, center, middle
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
 
-# BYE
+# MOTIVATION &amp; AIMS
 
 ---
+
+# Motivation &amp; Aims
+
+## Motivation
+
+  - Biological interpretation of the results is one of the hard points and high knowledge of statistical analysis and computational programming is usually required
+  
+  - Sometimes, the existing tools don’t accept "complicated" databases
+
+## Aims
+
+  - Provide users of an **EASY USE** tool that don’t require programming skills
+  
+  - Allow users to analyze all types of data (simple and complex)
+  
+  - Lead the user for a good statistical analysis (Documentation &amp; automatic reports) 
+  
+  - Make a completely **REPLICABLE** analysis
+
+???
+
+Because we want
+Because programming is cool
+Open source
+
+---
+
+# Architecture
+
+.center[
+&lt;img src="pix/architecture.png" width="750"&gt;
+]
+
+---
+
+# Future Work
+
+package
 
 ---
 
