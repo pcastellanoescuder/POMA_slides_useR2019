@@ -142,7 +142,7 @@ class: inverse, center, middle
   
   - Make a completely <span style="color:#f38620">**REPLICABLE**</span> analysis (Open Source)
   
-  - **Our main aim is <span style="color:#f38620">COMPLETE</span> and give other option to users, <span style="color:#f38620">NOT</span> to <span style="color:#f38620">COMPETE</span> with the extisting tools**
+  - **Our main aim is <span style="color:#f38620">COMPLETING</span> the existing tools and give other option to users, <span style="color:#f38620">NOT</span> to <span style="color:#f38620">COMPETE</span> with the existing tools**
 
 
 ???
@@ -165,6 +165,12 @@ class: inverse, center, middle
 ![](pix/landscape.png)
 
 _http://polcastellano.shinyapps.io/POMA/_
+
+---
+
+# Architecture
+
+![](pix/architecture.png)
 
 ---
 
@@ -260,15 +266,15 @@ class: inverse, center, middle
 
 (In order of importance...)
 
-  - Finishing the documentation as accurately as possible
+  - Finishing the **documentation** as accurately as possible
     
-  - Make the code more efficient
+  - Make the code more **efficient**
 
-  - Develop a package with all POMA functions
+  - Develop a **package** with all POMA functions
 
 .center[
 
-<img src="pix/meme.jpg" width="300">
+<img src="pix/meme.jpg" width="400">
 
 ]
 
