@@ -64,16 +64,22 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 # The data
 
-## How is the data?
-
-  - Standard (Omics) matrix: Samples in rows and metabolites (variables) in columns
-
 ## Targeted and untargeted metabolomics
+
+.center[
+
+<img src="pix/spectrum.png" width="300">
+
+]
 
   - **Targeted metabolomics:** we know the mass of the metabolites that we want to quantify BEFORE the analysis (hundreds)
 
   - **Untargeted metabolomics:** all metabolites will be acquired, but we will not know exactly which ones are some of them (thousands)
 
+## How is the data that we will analize?
+
+  - Standard (Omics) matrix: Samples in rows and metabolites (variables) in columns
+  
 ---
 
 # Freely Available Existing Tools
