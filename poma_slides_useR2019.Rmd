@@ -146,7 +146,7 @@ class: inverse, center, middle
   
   - Lead the user for a good statistical analysis (Documentation & automatic reports) 
   
-  - Make a completely <span style="color:#f38620">**REPLICABLE**</span> analysis (Open Source)
+  - Make a completely <span style="color:#f38620">**REPRODUCIBLE**</span> analysis (Open Source)
   
   - **Our main aim is <span style="color:#f38620">COMPLETING</span> the existing tools and give other option to users, <span style="color:#f38620">NOT</span> to <span style="color:#f38620">COMPETE</span> with the existing tools**
 
